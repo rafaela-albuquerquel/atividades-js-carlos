@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" type="image/x-icon">
+    <title>3ª Atividade de Carlos</title>
+</head>
+<body>
+    <script>
+        // 1- Escreva um programa que faça uma contagem regressiva de 10 até 1 e exiba "Feliz Ano Novo!" no final.
+        
+        // Contagem regressiva de 10 até 1
+        
+        for (i = 10; i >= 1; i--) {
+            console.log(i);  // Exibe o valor atual de i
+        }
+
+        // Exibe a mensagem "Feliz Ano Novo!" após a contagem regressiva
+        console.log("Feliz Ano Novo!")
+
+        // 2- Excreva um programa que some todos os números pares de 1 a 20 e exiba o resultado.
+        let soma = 0;
+
+        for (let i = 1; i <= 20; i ++) {
+            if (i % 2 === 0){
+                soma += i;
+            }
+        }
+
+        console.log("Soma dos números pares de 1 a 20: " + soma);
+
+        // 3- Escreva um programa que exiba a tabuada de um número dado (por exemplo, 7), de 1 a 10.
+
+        let numero = 7
+
+        for (let i = 0; i <= 10; i++) {
+            produto = numero * i
+            console.log(numero + "X" + i + " = " + produto)
+        }
+
+        // 4- Escreva um programa que conte o número de vogais em uma string.
+
+        function contarVogais(str) {
+            let vogais = "aeiouAEIOU";
+            let count = 0;
+
+            for (let i = 0; i < str.length; i++) {
+                if (vogais.includes(str[i])) {
+                    count++;
+                }
+            }
+            return count;
+        }
+        let string = "Exemplo de string";
+        let numerodevogais = contarVogais(string);
+        console.log("O número de vogais na string é: " + numerodevogais);
+
+        // 5- Escreva um programa que exiba todos os números ímpares de 1 a 20 usando laço while.
+
+        let impar = 15
+        //menor ou igual a 20
+        while (impar <= 20){
+            //se a variavel impar tiver o resto da divisao maior que zero, o numero é impar
+            if (impar % 2 !== 0){
+            console.log(impar)
+            }
+            //incrementa a variavel impar para o próximo numero impar
+            impar++
+        }
+        
+        
+
+        // 6- Escreva um programa que some os dígitos de um número inteiro (por exemplo. 1234 -> 1 + 2 + 3 + 4 = 10)
+        
+        function somaDigitos(numb) {
+
+        let sum = 0;
+        let numStr = numb.toString();
+
+        for (let i = 0; i < numStr.length; i++) {
+            sum += parseInt(numStr[i]);
+        }
+
+        return sum;
+    }
+
+    let numb = 9876;
+    console.log(`A soma dos dígitos de ${numb} é ${somaDigitos(numb)}`);
+
+        
+        // 7- Escreva um programa que exiba todas as propriedades e valores de um objeto. 
+        //  - let pessoa = {nome: "joão", idade: "15", cidade: "Recife"};
+
+        let pessoa = {
+            nome: "Rafaela",
+            idade: 21,
+            cidade: "Recife",
+            estado: "PE"
+        }
+        
+        console.log(pessoa)
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" type="image/js-icon">
+    <title>Atividade 2 de Carlos</title>
+</head>
+<body>
+    <script>
+        // 1- Escreva um programa que verifique se um positivo, negativo ou zero.
+        let verifique = "Atividade1:";
+        
+        let numero = 6;
+
+        if (numero > 0){
+            console.log (verifique, "Esse número é positivo.");
+        } else if (numero < 0){
+            console.log (verifique, "Esse número é negativo.");
+        } else if (numero == 0) {
+            console.log(verifique, "Este número é igual a zero!");
+        } else {
+            console.log(verifique, "Digite um valor válido");
+        }
+        // 2- Escreva um programa que determine se um número é par ou ímpar.
+        let determine = "Atividade2:";
+
+        let n1 = 567890;
+
+        if (n1 % 2 === 0){
+            console.log(determine, "Esse número " + n1 + " é par.");
+        } else if (n1 % 2 >= 0) { 
+            console.log(determine, "Esse número " + n1 + " é ímpar.");
+        } else {
+            console.log(determine, "Digite um número válido.");
+        }
+        // 3- Escreva um programa que classifique a idade de uma pessoa em "Criança" "Adolescente" ou "Idoso".
+        let idade = 57;
+        
+        if (idade < 12) {
+            console.log("É uma criança")
+        } else if (idade <= 17){
+            console.log("É um adolescente")
+        } else if (idade > 18){
+            console.log("É um adulto")
+        } else if (idade => 60){
+            console.log("É um idoso")
+        }else {
+            console.log("Digite uma idade válida")
+        }
+
+        // 4- Escreva um programa que determine a classifição de uma nota (A, B, C, D, F).
+
+        let nota = 4
+        let classifique = "Classificação da nota é: "
+
+        if (nota >= 9) {
+            console.log(classifique,'A')
+        } else if (nota >= 8) {
+            console.log(classifique, 'B')
+        } else if (nota >= 7) {
+            console.log(classifique, 'C')
+        } else if (nota >= 6) {
+            console.log(classifique, 'D')
+        } else if (nota <= 5) {
+            console.log(classifique, 'F')
+        } else {
+            console.log("Nota inválida")
+        }
+
+
+        // 5- Escreva um programa que, dado um número de 1 a 7, exiba o dia da semana correspondente.
+
+        let dia = 5
+        let diaDaSemana
+
+        switch (dia){
+            case 1: 
+                diaDaSemana = 'Domingo'
+            break;
+            case 2:
+                diaDaSemana = 'Segunda-Feira'
+            break;  
+            case 3:
+                diaDaSemana = 'Terça-Feira'
+            break;
+            case 4:
+                diaDaSemana = 'Quarta-Feira'
+            break;
+            case 5:
+                diaDaSemana = 'Quinta-Feira'
+            break;
+            case 6:
+                diaDaSemana = 'Sexta-Feira'
+            break;
+            case 7:
+                diaDaSemana = 'Sábado'
+            break;
+            default:
+                diaDaSemana = 'Número inválido. Digite um número válido!'
+        }
+        console.log("O dia da semana é: ", diaDaSemana)
+
+        // 6- Escreva um programa que calcule o bônus de um vendedor com base em seu faturamento mensal: 
+
+        //    - Faturamento abaixo de R$ 1.000: Sem Bônus;
+        //    - Faturamento entre R$ 1.000 e R$ 5.000: Bônus de 5%;
+        //    - Faturamento acima de R$ 5.000: Bônus de 10%;
+
+        let faturamento = 3000
+        let bonus
+
+        if (faturamento < 1000){
+            bonus = 0
+        } else if (faturamento >= 1000 && faturamento <= 5000){
+            bonus = 0.05
+        } else if (faturamento > 5000){
+            bonus = 0.1
+        } else {
+            console.log("Faturamento inválido. Digite um faturamento válido!")
+        }
+
+        console.log("O bônus do vendedor é de: ", bonus)
+
+    </script>
+</body>
+</html>
